@@ -12,13 +12,17 @@
         font-family: Arial, Helvetica, sans-serif;
     }
     .navbar-back {
-        background-image: url(./img/Banner_Home.jpg);
+        background-image: url(./img/Banner_Home.png);
         height: 12rem;
     }
     .container {
         margin: auto;
     }
-    .main-content {
+    .main-content-pre {
+        margin-bottom: 1.5rem;
+        text-align: left;
+    }
+    .main-content-post {
         display: grid;
         grid-gap: 1.5rem;
         grid-template-columns: repeat(2, 1fr);
@@ -26,13 +30,60 @@
     .main-content-text {
         margin: 1rem 0 1rem 0;
     }
+    .main-content-images {
+        float: left;
+        margin-right: 1rem;
+        width: 22%;
+    }
     .main-square {
         margin: auto;
         height: 10rem;
         width: 34rem;
     }
+    .main-square-lead-text {
+        font-size: 1.5rem;
+        font-weight: 700;
+        text-transform: uppercase;
+    }
+    .main-square-sub-text {
+        font-size: 1.2rem;
+    }
+    .main-square-detail-text {
+        font-size: 1rem;
+    }
+    /* .main-right-pointer {
+        width: 200px;
+        height: 40px;
+        position: relative;
+        background: red;
+    }
+    .main-right-pointer::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 0;
+        height: 0;
+        border-left: 20px solid transparent;
+        border-top: 20px solid transparent;
+        border-bottom: 20px solid transparent;
+    }
+    .main-right-pointer::before {
+        content: "";
+        position: absolute;
+        right: -20px;
+        bottom: 0;
+        width: 0;
+        height: 0;
+        border-left: 20px solid black;
+        border-top: 20px solid transparent;
+        border-bottom: 20px solid transparent;
+    } */
     .main-square-top {
-        background-color: gray;
+        background-color: white;
+    }
+    .main-square-top-right {
+        background-color: grey;
     }
     .main-square-mid {
         background-color: blue;
@@ -51,14 +102,33 @@
         This text will be used to provide details about how to use the sections of the page. This is intro text for the page. This text will be used to provide 
         details about how to use the sections of the page.
         </div>
-        <div class="main-content">
-        <div class="main-square main-square-top body__midleft-div">This is the left container</div> 
-        <div class="main-square main-square-top body__midright-div">This is the right container</div> 
+        <div class="main-content-pre">
+            <div class="main-square main-square-top">
+            <div>
+                <span class="main-square-lead-text">Pre-Loss</span>
+            </div>
+            <div>
+                <span class="main-square-sub-text">
+                <a href="https://intranet/depts/risk/Pages/Safety.aspx">
+                Nordnet - Safety / Injury Prevention Information</a>
+                </span>
+                <img class="main-content-images" src="./img/helmet_x200px.png" alt="Image representing safety - Worker wearing a helmet">
+            </div>
+            <div>
+                <span class="main-square-detail-text">
+                    This is some detail text about this section. This is some detail text about this section.
+                    This is some detail text about this section. This is some detail text about this section.
+                    This is some detail text about this section.
+                </span>
+            </div>
+        </div>
+        </div>
+        <div class="main-content-post">
+        <div class="main-square main-square-top-right body__midright-div"></div> 
         <div class="main-square main-square-mid body__midleft-div">This is the left container</div> 
         <div class="main-square main-square-mid body__midright-div">This is the right container</div> 
         <div class="main-square main-square-bottom body__midleft-div">This is the left container​<br/></div> 
         <div class="main-square main-square-bottom body__midright-div">This is the right container<br/></div>
-        </div> 
      </div>
 <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
