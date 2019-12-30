@@ -11,20 +11,25 @@
     body {
         font-family: Arial, Helvetica, sans-serif;
     }
-    .container-header {
-        margin: 0 10% 0 10%;
-    }
-    .container-footer {
-        margin: 0 10% 0 10%;
+    .navbar-back {
+        background-image: url(./img/Banner_Home.jpg);
+        height: 12rem;
     }
     .container {
-        margin: 0 10% 0 10%;
+        margin: auto;
+    }
+    .main-content {
         display: grid;
+        grid-gap: 1.5rem;
         grid-template-columns: repeat(2, 1fr);
     }
+    .main-content-text {
+        margin: 1rem 0 1rem 0;
+    }
     .main-square {
-        height: 200px;
-        width: 400px;
+        margin: auto;
+        height: 10rem;
+        width: 34rem;
     }
     .main-square-top {
         background-color: gray;
@@ -35,22 +40,25 @@
     .main-square-bottom {
         background-color: green;
     }
-    
 </style> 
 <body>
-    <div class="container-header">
-        <h2>Pre-Loss</h2>
-    </div>
     <div class="container">
+        <div class="header">
+        <nav class="navbar navbar-back"></nav>
+        </div>
+        <div class="main-content-text">This is intro text for the page. This text will be used to provide details about how to use the sections of the page. 
+        This is intro text for the page. This text will be used to provide details about how to use the sections of the page. This is intro text for the page. 
+        This text will be used to provide details about how to use the sections of the page. This is intro text for the page. This text will be used to provide 
+        details about how to use the sections of the page.
+        </div>
+        <div class="main-content">
         <div class="main-square main-square-top body__midleft-div">This is the left container</div> 
         <div class="main-square main-square-top body__midright-div">This is the right container</div> 
         <div class="main-square main-square-mid body__midleft-div">This is the left container</div> 
         <div class="main-square main-square-mid body__midright-div">This is the right container</div> 
         <div class="main-square main-square-bottom body__midleft-div">This is the left container​<br/></div> 
-        <div class="main-square main-square-bottom body__midright-div">This is the right container<br/></div> 
-     </div>
-     <div class="container-footer">
-         <h2>Post-Loss</h2>
+        <div class="main-square main-square-bottom body__midright-div">This is the right container<br/></div>
+        </div> 
      </div>
 <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
