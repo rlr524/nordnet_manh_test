@@ -18,14 +18,8 @@
     .container {
         margin: auto;
     }
-    .main-content-pre {
-        margin-bottom: 1.5rem;
-        text-align: left;
-    }
-    .main-content-post {
-        display: grid;
-        grid-gap: 1.5rem;
-        grid-template-columns: repeat(2, 1fr);
+    .jumbotron {
+        padding: 0;
     }
     .main-content-text {
         margin: 1rem 0 1rem 0;
@@ -33,7 +27,7 @@
     .main-content-images {
         float: left;
         margin-right: 1rem;
-        width: 22%;
+        width: 15%;
     }
     .main-square {
         margin: auto;
@@ -43,10 +37,12 @@
     .main-square-lead-text {
         font-size: 1.5rem;
         font-weight: 700;
+        text-align: left;
         text-transform: uppercase;
     }
     .main-square-sub-text {
         font-size: 1.2rem;
+        text-align: left;
     }
     .main-square-detail-text {
         font-size: 1rem;
@@ -83,13 +79,13 @@
         background-color: white;
     }
     .main-square-top-right {
-        background-color: grey;
+        background-color: lightgrey;
     }
     .main-square-mid {
-        background-color: blue;
+        background-color: lightgrey;
     }
     .main-square-bottom {
-        background-color: green;
+        background-color: lightgrey;
     }
 </style> 
 <body>
@@ -102,8 +98,8 @@
         This text will be used to provide details about how to use the sections of the page. This is intro text for the page. This text will be used to provide 
         details about how to use the sections of the page.
         </div>
-        <div class="main-content-pre">
-            <div class="main-square main-square-top">
+        <div class="jumbotron jumbotron-fluid">
+            <div>
             <div>
                 <span class="main-square-lead-text">Pre-Loss</span>
             </div>
@@ -118,17 +114,19 @@
                 <span class="main-square-detail-text">
                     This is some detail text about this section. This is some detail text about this section.
                     This is some detail text about this section. This is some detail text about this section.
-                    This is some detail text about this section.
+                    This is some detail text about this section. This is some detail text about this section. 
+                    This is some detail text about this section. This is some detail text about this section. 
+                    This is some detail text about this section. This is some detail text about this section.
                 </span>
             </div>
         </div>
         </div>
         <div class="main-content-post">
-        <div class="main-square main-square-top-right body__midright-div"></div> 
-        <div class="main-square main-square-mid body__midleft-div">This is the left container</div> 
-        <div class="main-square main-square-mid body__midright-div">This is the right container</div> 
-        <div class="main-square main-square-bottom body__midleft-div">This is the left container​<br/></div> 
-        <div class="main-square main-square-bottom body__midright-div">This is the right container<br/></div>
+        <div class="main-square main-square-top-right body__midright-div">POST LOSS CONTAINER - DEPT MGR GUIDE</div> 
+        <div class="main-square main-square-mid body__midleft-div">POST LOSS CONTAINER - REPORT INJURY</div> 
+        <div class="main-square main-square-mid body__midright-div">POST LOSS CONTAINER - JOB AID</div> 
+        <div class="main-square main-square-bottom body__midleft-div">POST LOSS CONTAINER - MEDCOR<br/></div> 
+        <div class="main-square main-square-bottom body__midright-div">POST LOSS CONTAINER WORK COMP<br/></div>
      </div>
 <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
