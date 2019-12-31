@@ -1,135 +1,239 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="MobileOptimized" content="width" />
+    <meta name="HandheldFriendly" content="true" />
+    <meta
+      name="description"
+      content="Nordnet - Legal / Risk Management Employee Injury Information for NYC / Manhattan"
+    />
+    <meta name="robots" content="index, follow" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
     <title>Legal - Manhattan Employee Injury Information</title>
-</head>
-<style>
+  </head>
+  <style>
     body {
-        font-family: Arial, Helvetica, sans-serif;
+      font-family: Arial, Helvetica, sans-serif;
+      margin: 0;
+      padding: 1% 2% 1% 2%;
+      text-align: center;
     }
-    .navbar-back {
-        background-image: url(./img/Banner_Home.png);
-        height: 12rem;
+    .jump-section {
+      float: initial;
+      margin-top: 5%;
     }
-    .container {
-        margin: auto;
-    }
-    .jumbotron {
-        padding: 0;
-    }
-    .main-content-text {
-        margin: 1rem 0 1rem 0;
+    #jumps {
+      padding: 0.5vmax 0 0.5vmax 0;
+      position: relative;
     }
     .main-content-images {
-        float: left;
-        margin-right: 1rem;
-        width: 15%;
+      width: 30%;
     }
-    .main-square {
-        margin: auto;
-        height: 10rem;
-        width: 34rem;
+    .dark-section {
+      background-color: whitesmoke;
     }
-    .main-square-lead-text {
-        font-size: 1.5rem;
-        font-weight: 700;
-        text-align: left;
-        text-transform: uppercase;
+    .light-section {
+      background-color: white;
     }
-    .main-square-sub-text {
-        font-size: 1.2rem;
-        text-align: left;
+    .safety-section {
+      margin-bottom: 5%;
     }
-    .main-square-detail-text {
-        font-size: 1rem;
+    .card-image-top {
+      margin-top: 2%;
+      width: 20%;
     }
-    /* .main-right-pointer {
-        width: 200px;
-        height: 40px;
-        position: relative;
-        background: red;
-    }
-    .main-right-pointer::after {
-        content: "";
-        position: absolute;
-        left: 0;
-        bottom: 0;
-        width: 0;
-        height: 0;
-        border-left: 20px solid transparent;
-        border-top: 20px solid transparent;
-        border-bottom: 20px solid transparent;
-    }
-    .main-right-pointer::before {
-        content: "";
-        position: absolute;
-        right: -20px;
-        bottom: 0;
-        width: 0;
-        height: 0;
-        border-left: 20px solid black;
-        border-top: 20px solid transparent;
-        border-bottom: 20px solid transparent;
-    } */
-    .main-square-top {
-        background-color: white;
-    }
-    .main-square-top-right {
-        background-color: lightgrey;
-    }
-    .main-square-mid {
-        background-color: lightgrey;
-    }
-    .main-square-bottom {
-        background-color: lightgrey;
-    }
-</style> 
-<body>
+  </style>
+  <body>
     <div class="container">
-        <div class="header">
-        <nav class="navbar navbar-back"></nav>
-        </div>
-        <div class="main-content-text">This is intro text for the page. This text will be used to provide details about how to use the sections of the page. 
-        This is intro text for the page. This text will be used to provide details about how to use the sections of the page. This is intro text for the page. 
-        This text will be used to provide details about how to use the sections of the page. This is intro text for the page. This text will be used to provide 
-        details about how to use the sections of the page.
-        </div>
-        <div class="jumbotron jumbotron-fluid">
-            <div>
-            <div>
-                <span class="main-square-lead-text">Pre-Loss</span>
-            </div>
-            <div>
-                <span class="main-square-sub-text">
-                <a href="https://intranet/depts/risk/Pages/Safety.aspx">
-                Nordnet - Safety / Injury Prevention Information</a>
+      <section class="header-section" id="title">
+        <img src="./img/Banner_Home.png" alt="Banner image of Manhattan" />
+      </section>
+      <section class="jump-section" id="jumps">
+        <div class="jumps-main">
+          <div>
+            <div class="row">
+              <div class="jumps-box col-sm">
+                <span class="jump-icons">
+                  <img
+                    class="main-content-images"
+                    src="./img/helmet_x200px.png"
+                    alt="Image representing safety - Worker wearing a helmet"
+                  />
                 </span>
-                <img class="main-content-images" src="./img/helmet_x200px.png" alt="Image representing safety - Worker wearing a helmet">
-            </div>
-            <div>
-                <span class="main-square-detail-text">
-                    This is some detail text about this section. This is some detail text about this section.
-                    This is some detail text about this section. This is some detail text about this section.
-                    This is some detail text about this section. This is some detail text about this section. 
-                    This is some detail text about this section. This is some detail text about this section. 
-                    This is some detail text about this section. This is some detail text about this section.
+                <h3 class="jumps-text">Pre-Loss</h3>
+                <p class="jumps-sub">
+                  <a href="#nordnet-safety">
+                    Prevention Information
+                  </a>
+                </p>
+              </div>
+              <div class="jumps-box col-sm">
+                <span class="jump-icons">
+                  <img
+                    class="main-content-images"
+                    src="./img/right-arrow.png"
+                    alt="Right arrow icon"
+                  />
                 </span>
+              </div>
+              <div class="jumps-box col-sm">
+                <span class="jump-icons">
+                  <img
+                    class="main-content-images"
+                    src="./img/report_x200px.png"
+                    alt="Image representing an injury report - Writing on clipboard"
+                  />
+                </span>
+                <h3 class="jumps-text">Incident Reporting</h3>
+                <p class="jumps-sub">
+                  <a href="#incident-reporting">
+                    When an Injury Happens
+                  </a>
+                </p>
+              </div>
+              <div class="jumps-box col-sm">
+                <span class="jump-icons">
+                  <img
+                    class="main-content-images"
+                    src="./img/right-arrow.png"
+                    alt="Right arrow icon"
+                  />
+                </span>
+              </div>
+              <div class="jumps-box col-sm">
+                <span class="jump-icons">
+                  <img
+                    class="main-content-images"
+                    src="./img/broken-arm_x200px.png"
+                    alt="Image representing an injury - Worker with arm in sling"
+                  />
+                </span>
+                <h3 class="jumps-text">Post-Loss</h3>
+                <p class="jumps-sub">
+                  <a href="#post-loss-cards">
+                    After the Injury Happens
+                  </a>
+                </p>
+              </div>
             </div>
+          </div>
         </div>
+      </section>
+      <section class="light-section safety-section" id="nordnet-safety">
+        <h2 class="pricing-head">Safety Information Available on Nordnet</h2>
+        <div class="row">
+          <div class="col-lg-4 col-md-6">
+            <div class="card">
+              <div class="card-header">Training Resources</div>
+              <img
+                src="./img/presentation.png"
+                class="card-image-top"
+                alt="Icon of someone teaching a class"
+                style="align-self: center"
+              />
+              <div class="card-body">
+                <ul class="list-group">
+                  <li class="list-group-item">Bloodborne Pathogens</li>
+                  <li class="list-group-item">Emergencies</li>
+                  <li class="list-group-item">
+                    Material Handling / Lifting & Carrying
+                  </li>
+                  <li class="list-group-item">Ergonomics & More</li>
+                </ul>
+                <button
+                  type="button"
+                  onclick="window.open('https://intranet/depts/risk/Pages/Safety.aspx')"
+                  class="btn btn-dark btn-lg btn-block price-btn"
+                  name="nordnet-button"
+                >
+                  Go to Nordnet Safety Page
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="card">
+              <div class="card-header">Recources by Division</div>
+              <img
+                src="./img/building.png"
+                class="card-image-top"
+                alt="Icon of a company building"
+                style="align-self: center"
+              />
+              <div class="card-body">
+                <ul class="list-group">
+                  <li class="list-group-item">Logistics</li>
+                  <li class="list-group-item">Facilities</li>
+                  <li class="list-group-item">Selling Departments</li>
+                  <li class="list-group-item">Restaurants & More</li>
+                </ul>
+                <button
+                  type="button"
+                  onclick="window.open('https://intranet/depts/risk/Pages/Safety.aspx')"
+                  class="btn btn-dark btn-lg btn-block price-btn"
+                  name="nordnet-button"
+                >
+                  Go to Nordnet Safety Page
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="card">
+              <div class="card-header">Plans and Programs</div>
+              <img
+                src="./img/guide.png"
+                class="card-image-top"
+                alt="Icon of a manual"
+                style="align-self: center"
+              />
+              <div class="card-body">
+                <ul class="list-group">
+                  <li class="list-group-item">OSHA Required Programs (IIPP)</li>
+                  <li class="list-group-item">Fall Protection</li>
+                  <li class="list-group-item">Hazard Communications</li>
+                  <li class="list-group-item">Lockout / Tagout & More</li>
+                </ul>
+                <button
+                  type="button"
+                  onclick="window.open('https://intranet/depts/risk/Pages/Safety.aspx')"
+                  class="btn btn-dark btn-lg btn-block price-btn"
+                  name="nordnet-button"
+                >
+                  Go to Nordnet Safety Page
+                </button>
+              </div>
+            </div>
+          </div>
         </div>
-        <div class="main-content-post">
-        <div class="main-square main-square-top-right body__midright-div">POST LOSS CONTAINER - DEPT MGR GUIDE</div> 
-        <div class="main-square main-square-mid body__midleft-div">POST LOSS CONTAINER - REPORT INJURY</div> 
-        <div class="main-square main-square-mid body__midright-div">POST LOSS CONTAINER - JOB AID</div> 
-        <div class="main-square main-square-bottom body__midleft-div">POST LOSS CONTAINER - MEDCOR<br/></div> 
-        <div class="main-square main-square-bottom body__midright-div">POST LOSS CONTAINER WORK COMP<br/></div>
-     </div>
-<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-</body>
+      </section>
+      <section class="light-section" id="incident-reporting">
+        <div class="jumbotron"></div>
+      </section>
+      <section class="plain-section" id="post-loss-cards"></section>
+    </div>
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+      integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+      integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>
