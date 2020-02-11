@@ -29,6 +29,9 @@
     .nav {
       margin-bottom: 1rem;
     }
+    .main-header-image {
+      width: 100%;
+    }
     .jump-section {
       float: initial;
       margin-top: 5%;
@@ -40,38 +43,36 @@
     .main-content-images {
       width: 30%;
     }
-    .dark-section {
-      background-color: whitesmoke;
-    }
-    .light-section {
-      background-color: white;
-    }
-    .safety-section {
-      margin-bottom: 5%;
+    #nordnet-safety {
+      margin-bottom: 2%;
     }
     .card-image-top {
       margin-top: 2%;
       width: 20%;
+    }
+    .jumbotron-content-images {
+      text-align: left;
+      width: 15%
+    }
+    .incident-jumbo {
+      text-align: left;
     }
   </style>
   <body>
     <div class="container">
       <ul class="nav nav-pills">
         <li class="nav-item">
-          <a class="nav-link active" href="#">Risk Home</a>
+          <a class="nav-link active" href="https://intranet/depts/risk/Pages/default.aspx" target="_blank">Risk Home</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Safety</a>
+          <a class="nav-link" href="https://intranet/depts/risk/Pages/wc.aspx" target="_blank">Workers' Compensation</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Workers' Compensation</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Injury Results</a>
+          <a class="nav-link" href="https://intranet/depts/risk/docs/Documents/WC_Frequency%20Report.pdf" target="_blank">Injury Results</a>
         </li>
       </ul>
       <section class="header-section" id="title">
-        <img src="https://nordstrom.sharepoint.com/:i:/r/sites/legalriskinsights/images1/Banner_Home.png?csf=1&e=fzBioC" alt="Banner image of Manhattan" />
+        <img class="main-header-image" src="https://nordstrom.sharepoint.com/:i:/r/sites/legalriskinsights/images1/Banner_Home.png?csf=1&e=fzBioC" alt="Banner image of Manhattan" />
       </section>
       <section class="jump-section" id="jumps">
         <div class="jumps-main">
@@ -144,7 +145,7 @@
           </div>
         </div>
       </section>
-      <section class="light-section safety-section" id="nordnet-safety">
+      <section id="nordnet-safety">
         <h2 class="pricing-head">Safety Information Available on Nordnet</h2>
         <div class="row">
           <div class="col-lg-6 col-md-6">
@@ -165,7 +166,6 @@
                   </li>
                   <li class="list-group-item">Ergonomics</li>
                   <li class="list-group-item">OSHA Required Programs (IIPP)</li>
-                  <li class="list-group-item">Fall Protection</li>
                   <li class="list-group-item">Hazard Communications</li>
                   <li class="list-group-item">Lockout / Tagout & More</li>
                 </ul>
@@ -194,8 +194,7 @@
                   <li class="list-group-item">Logistics</li>
                   <li class="list-group-item">Facilities</li>
                   <li class="list-group-item">Restaurant and Specialty Coffee</li>
-                  <li class="list-group-item">Service Experience</li>
-                  <li class="list-group-item">Visual Merchandising</li>
+                  <li class="list-group-item">Loss Prevention</li>
                   <li class="list-group-item">Alterations / Tailors</li>
                   <li class="list-group-item">Selling Departments</li>
                   <li class="list-group-item">Warehouses & More</li>
@@ -213,9 +212,20 @@
           </div>
         </div>
       </section>
-      <section class="light-section" id="incident-reporting">
-        <div class="jumbotron">Paceholder for Incident Reporting Detail</div>
-      </section>
+        <div class="jumbotron incident-jumbo" id="incident-reporting">
+          <h3>Online Injury and Incident Reporting</h3>
+          <p class="lead">Stores and offices, other than Manhattan, must continue to report all employee injuries to your human resources office, 
+          do not report employee injuries via this online tool. Only the Manhattan store and warehouses (DC, NQC, and Fulfillment) 
+          may use this online reporting tool at this time.</p>
+          <hr class="my-4">
+          <p>To comply with state and federal safety regulations, Risk Management must 
+            be notified immediately when an employee is severely injured or is transported by ambulance to a medical facility. 
+            If the injury occurs after normal business hours, use the "Risk Management" Outlook mailbox (askrisk@nordstrom.com) to 
+            report the injury in addition to the usual employee injury reporting process, or contact any on-call emergency contact. 
+            Risk Management will investigate and report the injury as needed. Failure to report timely may lead to government 
+            levied fines/penalties.</p>
+            <a class="btn btn-primary btn-lg" href="https://incidentreporting" target="_blank" role="button">Report an Injury</a>
+        </div>
       <section class="light-secion" id="post-loss-cards">
         <div class="jumbotron">Placeholder for Post-Loss Detail</div>
       </section>
