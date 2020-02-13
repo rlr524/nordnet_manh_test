@@ -46,6 +46,13 @@
     #nordnet-safety {
       margin-bottom: 2%;
     }
+    a.cards {
+      color: black;
+      text-decoration: none;
+    }
+    a.cards:hover {
+      text-decoration: underline;
+    }
     .card-image-top {
       margin-top: 2%;
       width: 20%;
@@ -55,6 +62,9 @@
       width: 15%
     }
     .incident-jumbo {
+      text-align: left;
+    }
+    .postloss-jumbo {
       text-align: left;
     }
   </style>
@@ -75,7 +85,7 @@
         <img class="main-header-image" src="https://nordstrom.sharepoint.com/:i:/r/sites/legalriskinsights/images1/Banner_Home.png?csf=1&e=fzBioC" alt="Banner image of Manhattan" />
       </section>
       <section class="jump-section" id="jumps">
-        <div class="jumps-main">
+        <div class="jumps-main jumbotron jumps-jumbo">
           <div>
             <div class="row">
               <div class="jumps-box col-sm">
@@ -159,15 +169,13 @@
               />
               <div class="card-body">
                 <ul class="list-group">
-                  <li class="list-group-item">Bloodborne Pathogens</li>
-                  <li class="list-group-item">Emergencies</li>
-                  <li class="list-group-item">
-                    Material Handling / Lifting & Carrying
-                  </li>
-                  <li class="list-group-item">Ergonomics</li>
-                  <li class="list-group-item">OSHA Required Programs (IIPP)</li>
-                  <li class="list-group-item">Hazard Communications</li>
-                  <li class="list-group-item">Lockout / Tagout & More</li>
+                  <li class="list-group-item"><a class="cards" href="#" target="_blank">Emergencies</a></li>
+                  <li class="list-group-item"><a class="cards" href="#" target="_blank">Bloodborne Pathogens</a></li>
+                  <li class="list-group-item"><a class="cards" href="#" target="_blank">Material Handling / Lifting & Carrying</a></li>
+                  <li class="list-group-item"><a class="cards" href="#" target="_blank">Ergonomics</a></li>
+                  <li class="list-group-item"><a class="cards" href="#" target="_blank">OSHA Required Programs (IIPP)</a></li>
+                  <li class="list-group-item"><a class="cards" href="#" target="_blank">Hazard Communications</a></li>
+                  <li class="list-group-item"><a class="cards" href="#" target="_blank">Lockout / Tagout</a> & More</li>
                 </ul>
                 <button
                   type="button"
@@ -191,13 +199,13 @@
               />
               <div class="card-body">
                 <ul class="list-group">
-                  <li class="list-group-item">Logistics</li>
-                  <li class="list-group-item">Facilities</li>
-                  <li class="list-group-item">Restaurant and Specialty Coffee</li>
-                  <li class="list-group-item">Loss Prevention</li>
-                  <li class="list-group-item">Alterations / Tailors</li>
-                  <li class="list-group-item">Selling Departments</li>
-                  <li class="list-group-item">Warehouses & More</li>
+                  <li class="list-group-item"><a class="cards" href="#" target="_blank">Logistics</a></li>
+                  <li class="list-group-item"><a class="cards" href="#" target="_blank">Facilities</a></li>
+                  <li class="list-group-item"><a class="cards" href="#" target="_blank">Restaurant and Specialty Coffee</a></li>
+                  <li class="list-group-item"><a class="cards" href="#" target="_blank">Loss Prevention</a></li>
+                  <li class="list-group-item"><a class="cards" href="#" target="_blank">Alterations / Tailors</a></li>
+                  <li class="list-group-item"><a class="cards" href="#" target="_blank">Selling Departments</a></li>
+                  <li class="list-group-item"><a class="cards" href="#" target="_blank">Warehouses</a> & More</li>
                 </ul>
                 <button
                   type="button"
@@ -226,10 +234,20 @@
             levied fines/penalties.</p>
             <a class="btn btn-primary btn-lg" href="https://incidentreporting" target="_blank" role="button">Report an Injury</a>
         </div>
-      <section class="light-secion" id="post-loss-cards">
-        <div class="jumbotron">Placeholder for Post-Loss Detail</div>
-      </section>
-    </div>
+        <div class="jumbotron postloss-jumbo" id="incident-reporting">
+          <h3>Online Injury and Incident Reporting</h3>
+          <p class="lead">Stores and offices, other than Manhattan, must continue to report all employee injuries to your human resources office, 
+          do not report employee injuries via this online tool. Only the Manhattan store and warehouses (DC, NQC, and Fulfillment) 
+          may use this online reporting tool at this time.</p>
+          <hr class="my-4">
+          <p>To comply with state and federal safety regulations, Risk Management must 
+            be notified immediately when an employee is severely injured or is transported by ambulance to a medical facility. 
+            If the injury occurs after normal business hours, use the "Risk Management" Outlook mailbox (askrisk@nordstrom.com) to 
+            report the injury in addition to the usual employee injury reporting process, or contact any on-call emergency contact. 
+            Risk Management will investigate and report the injury as needed. Failure to report timely may lead to government 
+            levied fines/penalties.</p>
+            <a class="btn btn-primary btn-lg" href="https://incidentreporting" target="_blank" role="button">Report an Injury</a>
+        </div>
     <script
       src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
       integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
