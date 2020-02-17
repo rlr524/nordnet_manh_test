@@ -30,6 +30,13 @@
     .nav {
       margin-bottom: 1rem;
     }
+    .nav-pills > li > a.active {
+      background-color: grey !important;
+      color: white !important;
+    }
+    .nav-link-color {
+      color: grey;
+    }
     .main-header-image {
       width: 100%;
     }
@@ -72,14 +79,14 @@
   <body>
     <div class="container">
       <ul class="nav nav-pills">
-        <li class="nav-item">
+        <li class="nav-item nav-pills-grey">
           <a class="nav-link active" href="https://intranet/depts/risk/Pages/default.aspx" target="_blank">Risk Home</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="https://intranet/depts/risk/Pages/wc.aspx" target="_blank">Workers' Compensation</a>
+          <a class="nav-link nav-link-color" href="https://intranet/depts/risk/Pages/wc.aspx" target="_blank">Workers' Compensation</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="https://intranet/depts/risk/docs/Documents/WC_Frequency%20Report.pdf" target="_blank">Injury Results</a>
+          <a class="nav-link nav-link-color" href="https://intranet/depts/risk/docs/Documents/WC_Frequency%20Report.pdf" target="_blank">Injury Results</a>
         </li>
       </ul>
       <section class="header-section" id="title">
@@ -99,7 +106,7 @@
                 </span>
                 <h3 class="jumps-text">Pre-Loss</h3>
                 <p class="jumps-sub">
-                  <a href="#nordnet-safety">
+                  <a class="nav-link-color" href="#nordnet-safety">
                     Prevention Information
                   </a>
                 </p>
@@ -123,7 +130,7 @@
                 </span>
                 <h3 class="jumps-text">Reporting</h3>
                 <p class="jumps-sub">
-                  <a href="#incident-reporting">
+                  <a class="nav-link-color" href="#incident-reporting">
                     When an Injury Happens
                   </a>
                 </p>
@@ -147,7 +154,7 @@
                 </span>
                 <h3 class="jumps-text">Post-Loss</h3>
                 <p class="jumps-sub">
-                  <a href="#post-loss">
+                  <a class="nav-link-color" href="#post-loss">
                     After the Injury Happens
                   </a>
                 </p>
@@ -181,10 +188,10 @@
                 <button
                   type="button"
                   onclick="window.open('https://intranet/depts/risk/Pages/Safety.aspx')"
-                  class="btn btn-dark btn-lg btn-block price-btn"
+                  class="btn btn-lg btn-block btn-secondary"
                   name="nordnet-button"
                 >
-                  Go to Nordnet Safety Page
+                  Safety on Nordnet
                 </button>
               </div>
             </div>
@@ -211,10 +218,10 @@
                 <button
                   type="button"
                   onclick="window.open('https://intranet/depts/risk/Pages/Safety.aspx')"
-                  class="btn btn-dark btn-lg btn-block price-btn"
+                  class="btn btn-lg btn-block btn-secondary"
                   name="nordnet-button"
                 >
-                  Go to Nordnet Safety Page
+                  Safety on Nordnet
                 </button>
               </div>
             </div>
@@ -233,11 +240,7 @@
             report the injury in addition to the usual employee injury reporting process, or contact any on-call emergency contact. 
             Risk Management will investigate and report the injury as needed. Failure to report timely may lead to government 
             levied fines/penalties.</p>
-            <div class="flex flex-row flex-nowrap items-stretch shadow-3 br3">
-              <div class="br3 br--left bg-white pa3 flex flex-column items-center justify-center pink5">
-                <a href="https://incidentreporting" target="_blank"><i class="fas fa-desktop fa-5x">Report an Injury</i></a>
-              </div>
-            </div>
+            <a class="btn btn-primary btn-secondary btn-lg" href="https://incidentreporting" target="_blank" role="button">Report an Injury</a>
         </div>
         <div class="jumbotron postloss-jumbo" id="post-loss">
           <h3>Post-Loss: After an Injury Occurs</h3>
@@ -251,10 +254,10 @@
             report the injury in addition to the usual employee injury reporting process, or contact any on-call emergency contact. 
             Risk Management will investigate and report the injury as needed. Failure to report timely may lead to government 
             levied fines/penalties.</p>
-            <a class="btn btn-primary btn-lg" href="https://nordstrom.sharepoint.com/:b:/s/legalriskinsights/EVrXRxdS8ilHgifFg96TDc4B0YcBYbEY5YcSzZXcXFFpkw?e=tNFgES" target="_blank" role="button">Dept Mgr Guide</a>
-            <a class="btn btn-primary btn-lg" href="https://nordstrom.sharepoint.com/:b:/s/legalriskinsights/EZItcCMcDdtIk02T2gmkwHIBgpPdsHurb3mBSzh8FWhv4A?e=rJBP2G" target="_blank" role="button">Employee Injury Job Aid</a>
-            <a class="btn btn-primary btn-lg" href="https://nordstrom.sharepoint.com/:b:/s/legalriskinsights/ESRAHJqp4xxEj3Mo5ivvP2MB4pbH-j-cdcoZkJBNuISXNg?e=wPLVU6" target="_blank" role="button">NY Workers' Comp</a>
-            <a class="btn btn-primary btn-lg" href="https://nordstrom.sharepoint.com/:b:/s/legalriskinsights/EfkTw25tm1pAlzsXMIyCQ6UBZPF-hZJKMVdmeQYYBz1QsA?e=eyFvN5" target="_blank" role="button">Using Medcor</a>
+            <a class="btn btn-primary btn-secondary btn-lg" href="https://nordstrom.sharepoint.com/:b:/s/legalriskinsights/EVrXRxdS8ilHgifFg96TDc4B0YcBYbEY5YcSzZXcXFFpkw?e=tNFgES" target="_blank" role="button">Dept Mgr Guide</a>
+            <a class="btn btn-primary btn-secondary btn-lg" href="https://nordstrom.sharepoint.com/:b:/s/legalriskinsights/EZItcCMcDdtIk02T2gmkwHIBgpPdsHurb3mBSzh8FWhv4A?e=rJBP2G" target="_blank" role="button">Employee Injury Job Aid</a>
+            <a class="btn btn-primary btn-secondary btn-lg" href="https://nordstrom.sharepoint.com/:b:/s/legalriskinsights/ESRAHJqp4xxEj3Mo5ivvP2MB4pbH-j-cdcoZkJBNuISXNg?e=wPLVU6" target="_blank" role="button">NY Workers' Comp</a>
+            <a class="btn btn-primary btn-secondary btn-lg" href="https://nordstrom.sharepoint.com/:b:/s/legalriskinsights/EfkTw25tm1pAlzsXMIyCQ6UBZPF-hZJKMVdmeQYYBz1QsA?e=eyFvN5" target="_blank" role="button">Using Medcor</a>
         </div>
     <script
       src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
