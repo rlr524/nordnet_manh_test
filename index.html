@@ -34,8 +34,18 @@
       background-color: grey !important;
       color: white !important;
     }
+    .nav-item > a:hover {
+      color: grey;
+      text-decoration: underline;
+    }
     .nav-link-color {
       color: grey;
+    }
+    a.nav-link-jump {
+      color: black;
+    }
+    a.nav-link-jump:hover {
+      text-decoration: underline !important;
     }
     .main-header-image {
       width: 100%;
@@ -47,6 +57,13 @@
     #jumps {
       padding: 0.5vmax 0 0.5vmax 0;
       position: relative;
+    }
+    .jumps-text {
+      color: black;
+    }
+    a.jump-link-text:hover {
+      text-decoration: none;
+      color: black;
     }
     .main-content-images {
       width: 30%;
@@ -97,6 +114,7 @@
           <div>
             <div class="row">
               <div class="jumps-box col-sm">
+                <a class="jump-link-text" href="#nordnet-safety">
                 <span class="jump-icons">
                   <img
                     class="main-content-images"
@@ -105,8 +123,9 @@
                   />
                 </span>
                 <h3 class="jumps-text">Pre-Loss</h3>
+                  </a>
                 <p class="jumps-sub">
-                  <a class="nav-link-color" href="#nordnet-safety">
+                  <a class="nav-link-jump" href="#nordnet-safety">
                     Prevention Information
                   </a>
                 </p>
@@ -121,6 +140,7 @@
                 </span>
               </div>
               <div class="jumps-box col-sm">
+                <a class="jump-link-text" href="#incident-reporting">
                 <span class="jump-icons">
                   <img
                     class="main-content-images"
@@ -129,8 +149,9 @@
                   />
                 </span>
                 <h3 class="jumps-text">Reporting</h3>
+                </a>
                 <p class="jumps-sub">
-                  <a class="nav-link-color" href="#incident-reporting">
+                  <a class="nav-link-jump" href="#incident-reporting">
                     When an Injury Happens
                   </a>
                 </p>
@@ -145,6 +166,7 @@
                 </span>
               </div>
               <div class="jumps-box col-sm">
+                <a class="jump-link-text" href="#post-loss">
                 <span class="jump-icons">
                   <img
                     class="main-content-images"
@@ -153,8 +175,9 @@
                   />
                 </span>
                 <h3 class="jumps-text">Post-Loss</h3>
+                </a>
                 <p class="jumps-sub">
-                  <a class="nav-link-color" href="#post-loss">
+                  <a class="nav-link-jump" href="#post-loss">
                     After the Injury Happens
                   </a>
                 </p>
@@ -244,16 +267,9 @@
         </div>
         <div class="jumbotron postloss-jumbo" id="post-loss">
           <h3>Post-Loss: After an Injury Occurs</h3>
-          <p class="lead">Stores and offices, other than Manhattan, must continue to report all employee injuries to your human resources office, 
-          do not report employee injuries via this online tool. Only the Manhattan store and warehouses (DC, NQC, and Fulfillment) 
-          may use this online reporting tool at this time.</p>
+          <p class="lead">##### Short post-loss intro here #####</p>
           <hr class="my-4">
-          <p>To comply with state and federal safety regulations, Risk Management must 
-            be notified immediately when an employee is severely injured or is transported by ambulance to a medical facility. 
-            If the injury occurs after normal business hours, use the "Risk Management" Outlook mailbox (askrisk@nordstrom.com) to 
-            report the injury in addition to the usual employee injury reporting process, or contact any on-call emergency contact. 
-            Risk Management will investigate and report the injury as needed. Failure to report timely may lead to government 
-            levied fines/penalties.</p>
+          <p>##### Post-loss detail here #####</p>
             <a class="btn btn-primary btn-secondary btn-lg" href="https://nordstrom.sharepoint.com/:b:/s/legalriskinsights/EVrXRxdS8ilHgifFg96TDc4B0YcBYbEY5YcSzZXcXFFpkw?e=tNFgES" target="_blank" role="button">Dept Mgr Guide</a>
             <a class="btn btn-primary btn-secondary btn-lg" href="https://nordstrom.sharepoint.com/:b:/s/legalriskinsights/EZItcCMcDdtIk02T2gmkwHIBgpPdsHurb3mBSzh8FWhv4A?e=rJBP2G" target="_blank" role="button">Employee Injury Job Aid</a>
             <a class="btn btn-primary btn-secondary btn-lg" href="https://nordstrom.sharepoint.com/:b:/s/legalriskinsights/ESRAHJqp4xxEj3Mo5ivvP2MB4pbH-j-cdcoZkJBNuISXNg?e=wPLVU6" target="_blank" role="button">NY Workers' Comp</a>
